@@ -8,6 +8,7 @@ class Solution {
         }
 
         for (char c : s.toCharArray()) {
+
             if (!stack.isEmpty() && stack.contains(c)) {
                 freq.put(c, freq.get(c) - 1);
                 continue;
